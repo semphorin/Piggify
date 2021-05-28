@@ -19,7 +19,7 @@ def Piggify(inputString):
     inputString.lower()
     words = inputString.split()
     i = 0
-    returnString = ""
+    returnString = ''
     for word in words:
         x = checkConsonants(word)
         if x > 0:
@@ -36,7 +36,4 @@ def Piggify(inputString):
             returnString += " " + word
     return returnString
 
-y = ""
-while y != 'q' or 'Q':
-    y = input('Gimme some words, brah.')
-    print(Piggify(y))
+print(Piggify(input('Input some words.\n')))
